@@ -1,4 +1,6 @@
-function Evaluvate_form(){
+function Evaluvate_form(e){
+
+    e.preventDefault();
 
     //Check Postal code to match a0a0a0 format
     var postalCode = document.getElementById("pcode").value;
@@ -11,7 +13,7 @@ function Evaluvate_form(){
     }
     
     //Check is Province is matching
-    var city = document.getElementById("provice").value;
+    var city = document.getElementById("province").value;
 
     switch(city.toUpperCase()){
         case 'QC':
@@ -29,7 +31,7 @@ function Evaluvate_form(){
     var age = document.getElementById("age").value;
 
     if(parseInt(age) < 18){
-        console.log("You are younger that 18yrs!")
+        console.log("You are younger that 18yrs!");
     }
 
     //The Email field must contain the @ and . characters
