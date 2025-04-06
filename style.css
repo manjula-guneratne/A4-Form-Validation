@@ -4,10 +4,15 @@
     column-gap: 50px;
     grid-template-columns: auto auto;
     padding: 10px;
+    background-color: whitesmoke;
   }
   
   .container > div {
     font-size: 20px;
     padding: 5px;
     text-align: center;
+  }
+
+  .button{
+    background-color: aqua;
   }
